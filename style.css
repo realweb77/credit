@@ -1,0 +1,119 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Page Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff
+    
+
+    }
+
+/* Main Card Container */
+.card {
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Adding a sleek background design element */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border-radius: 50%;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo Styling */
+.card-logo {
+    text-align: right;
+}
+
+.logo-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* Smart Chip Styling */
+.card-chip {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border-radius: 8px;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.chip-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Card Number Styling */
+.card-number {
+    font-size: 28px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Details Section (Name & Date) */
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.label {
+    display: block;
+    font-size: 11px;
+    color: #a0aec0;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.name, .date {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
